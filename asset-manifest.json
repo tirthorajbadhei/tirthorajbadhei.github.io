@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/static/css/main.91fca860.css",
+    "main.js": "/static/js/main.ba1bdbed.js",
+    "static/media/airtable.png": "/static/media/airtable.7e1ca85093dc2afcb751.png",
+    "static/media/deccanherald.png": "/static/media/deccanherald.e5fe539575c325bd6bff.png",
+    "static/media/pluralsight.png": "/static/media/pluralsight.db24f26a56b3abd9be01.png",
+    "static/media/testimonial-2.webp": "/static/media/testimonial-2.4c1e7c2fe42e548d2e0f.webp",
+    "static/media/Aboutimg.png": "/static/media/Aboutimg.9e33fa136582e90e519e.png",
+    "static/media/pushpendra.jpg": "/static/media/pushpendra.fe48d10fdb651abcb67c.jpg",
+    "static/media/p5.webp": "/static/media/p5.40f22911cc8104bfdf42.webp",
+    "static/media/testimonial-3.webp": "/static/media/testimonial-3.677360499dd5a97f022a.webp",
+    "static/media/logo.svg": "/static/media/logo.b521a898489cfa7dc3863d7e83be3cc1.svg",
+    "static/media/services.svg": "/static/media/services.2d6c88f25842315ca095.svg",
+    "static/media/portfolio.svg": "/static/media/portfolio.2f31f4be113e35cc3442.svg",
+    "static/media/reactjs.png": "/static/media/reactjs.396536ced87da4ba25b4.png",
+    "static/media/testimonials.svg": "/static/media/testimonials.07294ae9606e6d7ea071.svg",
+    "static/media/contact.svg": "/static/media/contact.ec60abf53c38c2593f7e.svg",
+    "static/media/p4.webp": "/static/media/p4.373ffd063f14c91c84c5.webp",
+    "static/media/p6.webp": "/static/media/p6.26fcf4320bfa0eacc03a.webp",
+    "static/media/testimonial-1.webp": "/static/media/testimonial-1.8e05fd5dbc71387931b5.webp",
+    "static/media/about.svg": "/static/media/about.70a8290c961c47c208b5.svg",
+    "index.html": "/index.html",
+    "main.91fca860.css.map": "/static/css/main.91fca860.css.map",
+    "main.ba1bdbed.js.map": "/static/js/main.ba1bdbed.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.91fca860.css",
+    "static/js/main.ba1bdbed.js"
+  ]
+}
