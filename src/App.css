@@ -1,0 +1,72 @@
+*{
+  font-family: Montserrat, sans-serif;
+  font-weight: 700;
+}
+.nav-link:hover{
+  color: #ff014f;
+}
+.navbar-brand{
+  color: #ff014f;
+}
+.navbar-nav{
+  margin-left: 72%;
+}
+.row{
+  gap: 20px;
+}
+
+.img1{
+  width: 50%;
+  border-radius: 20%;
+  
+}           
+.head{
+  color: #ff014f;
+  font-size: 70px;
+}
+.about{
+  width: 80%;
+  margin: auto;
+  
+}
+.icon{
+  display: flex;
+ gap: 50px;
+  justify-content: center;
+}
+.icon div{
+  cursor: pointer;
+  box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+  transition: 600ms;
+}
+.icon div:hover{
+  transform: scale(1.5);
+}
+.mainSkill{
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 20px;
+ text-align: center;
+ 
+}
+.skill{
+  transition: 600ms;
+  margin: auto;
+  justify-content: center;
+  
+}
+.skill:hover{
+  transform: scale(1.3);
+
+}
+.skill img{
+  width: 40%;
+  margin: auto;
+  box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
+  
+}
+.project{
+  border: 1px solid #ff014f;
+}
+
