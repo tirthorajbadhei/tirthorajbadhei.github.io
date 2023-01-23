@@ -13,13 +13,20 @@
 }
 .row{
   gap: 20px;
+  
 }
 
 .img1{
   width: 50%;
   border-radius: 20%;
+  transition: 1000ms;
   
-}           
+}
+.img1:hover{
+ transform: scale(.9)
+ 
+  
+}            
 .head{
   color: #ff014f;
   font-size: 70px;
@@ -67,6 +74,26 @@
   
 }
 .project{
-  border: 1px solid #ff014f;
+  transition: 700ms;
+  box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
 }
 
+i:hover{
+  transition: 700ms;
+  transform: scale(1.4);
+}
+.project:hover{
+  transform: scale(.9);
+}
+.git{
+  transition: 700ms;
+}
+.git:hover{
+  transform: scale(1.1);
+}
+.div1{
+  transition: 700ms;
+}  
+.div1:hover{
+ transform: scale(.9);
+} 

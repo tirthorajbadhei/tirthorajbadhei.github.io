@@ -1,4 +1,18 @@
 const Navbar = () => {
+  const onButtonClick = () => {
+    // using Java Script method to get PDF file
+    fetch("Tirthoraj_Badhei_Resume.pdf").then((response) => {
+      response.blob().then((blob) => {
+        // Creating new object of PDF file
+        const fileURL = window.URL.createObjectURL(blob);
+        // Setting various property values
+        let alink = document.createElement("a");
+        alink.href = fileURL;
+        alink.download = "Tirthoraj_Badhei_Resume.pdf";
+        alink.click();
+      });
+    });
+  };
   const handleAlert = () => {
     alert("Message Sent!");
   };
@@ -36,8 +50,9 @@ const Navbar = () => {
                 PROJECTS
               </a>
               <a
+                style={{ cursor: "pointer" }}
                 className="nav-link"
-                href="https://drive.google.com/file/d/1DrXBGYLuvRhDFTgDk4WDsnxiLbnLjsja/view?usp=share_link"
+                onClick={onButtonClick}
               >
                 RESUME
               </a>
@@ -192,13 +207,145 @@ const Navbar = () => {
       ></div>
       <div className="container-fluid text-center">
         <div className="row">
-          <div className="col-sm project">Project1</div>
-          <div className="col-sm project">Project2</div>
-          <div className="col-sm project">Project3</div>
+          <div className="col-sm project">
+            <div>
+              <img style={{ width: "100%" }} src="1.jpg" alt="" />
+              <p>
+                Lenskart Clone. is an Indian e-commerce company that sells
+                eyeglasses, contact lenses, and sunglasses. Lenskart has a wide
+                variety of products and offers services such as free home trial
+                and virtual try-on.
+              </p>
+              <div
+                style={{
+                  display: "flex",
+                  gap: "50px",
+
+                  justifyContent: "center",
+                }}
+              >
+                <a href="https://github.com/tirthorajbadhei/Lenskart_Clone">
+                  <i
+                    style={{ fontSize: "50px", color: "black" }}
+                    class="fa-brands fa-github"
+                  ></i>
+                </a>
+                <a href="https://masai-glasscart.netlify.app/">
+                  <i
+                    style={{ fontSize: "50px", color: "black" }}
+                    class="fa-solid fa-arrow-right-to-bracket"
+                  ></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div className="col-sm project">
+            <div>
+              <img style={{ width: "100%" }} src="2.jpg" alt="" />
+              <p>
+                YouTube 2.0 Clone, where users can search and play any video
+                they want
+              </p>
+              <div
+                style={{
+                  display: "flex",
+                  gap: "50px",
+
+                  justifyContent: "center",
+                }}
+              >
+                <a href="https://github.com/tirthorajbadhei/YouTube">
+                  <i
+                    style={{ fontSize: "50px", color: "black" }}
+                    class="fa-brands fa-github"
+                  ></i>
+                </a>
+                <a href="https://sensational-bunny-5315c0.netlify.app/">
+                  <i
+                    style={{ fontSize: "50px", color: "black" }}
+                    class="fa-solid fa-arrow-right-to-bracket"
+                  ></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div className="col-sm project">
+            <div>
+              <img style={{ width: "100%" }} src="3.jpg" alt="" />
+              <p>
+                DeskTime is a time management website, where users can add and
+                remove certain team members, and plan any project they want to
+                do
+              </p>
+              <div
+                style={{
+                  display: "flex",
+                  gap: "50px",
+
+                  justifyContent: "center",
+                }}
+              >
+                <a href="https://github.com/tirthorajbadhei/DeskTime_Clone">
+                  <i
+                    style={{ fontSize: "50px", color: "black" }}
+                    class="fa-brands fa-github"
+                  ></i>
+                </a>
+                <a href="https://teslatime-dot-com.netlify.app/">
+                  <i
+                    style={{ fontSize: "50px", color: "black" }}
+                    class="fa-solid fa-arrow-right-to-bracket"
+                  ></i>
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <br />
       <br />
+      <br />
+      <br />
+      <div className="container text-center">
+        <div className="row">
+          <div className="col-sm git">
+            {" "}
+            <p>
+              <img
+                style={{ width: "90%" }}
+                align="left"
+                src="https://github-readme-stats.vercel.app/api/top-langs?username=tirthorajbadhei&show_icons=true&locale=en&layout=compact"
+                alt="tirthorajbadhei"
+              />
+            </p>
+          </div>
+          <div className="col-sm git">
+            {" "}
+            <p>
+              &nbsp;
+              <img
+                style={{ width: "100%" }}
+                align="center"
+                src="https://github-readme-stats.vercel.app/api?username=tirthorajbadhei&show_icons=true&locale=en"
+                alt="tirthorajbadhei"
+              />
+            </p>
+          </div>
+          <div className="col-sm git">
+            {" "}
+            <p>
+              <img
+                style={{ width: "100%" }}
+                align="center"
+                src="https://github-readme-streak-stats.herokuapp.com/?user=tirthorajbadhei&"
+                alt="tirthorajbadhei"
+              />
+            </p>
+          </div>
+        </div>
+      </div>
+      <div></div>
+
       <br />
       <h1 style={{ fontSize: "60px", fontWeight: "700", textAlign: "center" }}>
         CONTACT
