@@ -1,3 +1,5 @@
+import { Typewriter } from "react-simple-typewriter";
+import GitHubCalendar from "react-github-calendar";
 const Navbar = () => {
   const onButtonClick = () => {
     // using Java Script method to get PDF file
@@ -66,17 +68,33 @@ const Navbar = () => {
       <br />
       <br />
       <br />
-      <div class="container-fluid text-center" id="scrollspyHeading1">
-        <div class="row">
-          <div class="col-sm">
-            <h4>WELCOME TO MY WORLD</h4>
+      <div className="container-fluid text-center" id="scrollspyHeading1">
+        <div className="row">
+          <div className="col-sm">
+            <h4>
+              <Typewriter
+                words={["WELCOME TO MY WORLD", "Thank you for visiting"]}
+                loop={0}
+                cursor
+                typeSpeed={70}
+                deleteSpeed={50}
+                delaySpeed={1000}
+              />
+            </h4>
             <br />
             <h1 className="head">Hi, I'm Tirthoraj Badhei</h1>
             <br />
             <h5 className="about">
-              A Skilled full stack developer and quick learner who can quickly
-              adapt to new environments. Looking for a challenging role in the
-              industry to utilize skills and learn
+              <Typewriter
+                words={[
+                  "A Skilled full stack developer and quick learner who can quickly adapt to new environments. Looking for a challenging role in the industry to utilize skills and learn",
+                ]}
+                loop={1}
+                cursor
+                typeSpeed={5}
+                deleteSpeed={5}
+                delaySpeed={1000}
+              />
             </h5>
             <br />
 
@@ -87,7 +105,7 @@ const Navbar = () => {
                 <a href="https://github.com/tirthorajbadhei">
                   <i
                     style={{ fontSize: "50px", color: "black" }}
-                    class="fa-brands fa-github"
+                    className="fa-brands fa-github"
                   ></i>
                 </a>
               </div>
@@ -96,7 +114,7 @@ const Navbar = () => {
                   {" "}
                   <i
                     style={{ fontSize: "50px", color: "black" }}
-                    class="fa-brands fa-linkedin"
+                    className="fa-brands fa-linkedin"
                   ></i>
                 </a>
               </div>
@@ -105,13 +123,13 @@ const Navbar = () => {
                   {" "}
                   <i
                     style={{ fontSize: "50px", color: "black" }}
-                    class="icon1 fa-solid fa-envelope"
+                    className="icon1 fa-solid fa-envelope"
                   ></i>
                 </a>
               </div>
             </div>
           </div>
-          <div class="col-sm">
+          <div className="col-sm">
             <img className="img1" src="tirthoraj.png" alt="tirthoraj" />
           </div>
         </div>
@@ -123,14 +141,21 @@ const Navbar = () => {
         id="scrollspyHeading2"
         style={{ textAlign: "center", color: " #ff014f" }}
       >
-        SKILLS
+        <Typewriter
+          words={["SKILLS"]}
+          loop={0}
+          cursor
+          typeSpeed={50}
+          deleteSpeed={50}
+          delaySpeed={500}
+        />
       </h1>
       <br />
       <br />
       <br />
-      <div class="container-fluid text-centerr">
+      <div className="container-fluid text-centerr">
         <div className="row">
-          <div class="col-sm">
+          <div className="col-sm">
             <div className="mainSkill">
               <div className="skill">
                 <img
@@ -187,23 +212,25 @@ const Navbar = () => {
       <br />
       <br />
       <br />
-      <h6
-        id="scrollspyHeading3"
-        style={{ color: " #ff014f", textAlign: "center" }}
-      >
-        VISIT MY PROJECTS
-      </h6>
+
       <br />
       <h1 style={{ fontSize: "60px", fontWeight: "700", textAlign: "center" }}>
-        My Projects
+        <Typewriter
+          words={["My Projects"]}
+          loop={0}
+          cursor
+          typeSpeed={100}
+          deleteSpeed={100}
+          delaySpeed={1000}
+        />
       </h1>
       <div
         data-bs-spy="scroll"
         data-bs-target="#navbar-example2"
         data-bs-root-margin="0px 0px -40%"
         data-bs-smooth-scroll="true"
-        class="scrollspy-example bg-body-tertiary p-3 rounded-2"
-        tabindex="0"
+        className="scrollspy-example bg-body-tertiary p-3 rounded-2"
+        tabIndex="0"
       ></div>
       <div className="container-fluid text-center">
         <div className="row">
@@ -227,13 +254,13 @@ const Navbar = () => {
                 <a href="https://github.com/tirthorajbadhei/Lenskart_Clone">
                   <i
                     style={{ fontSize: "50px", color: "black" }}
-                    class="fa-brands fa-github"
+                    className="fa-brands fa-github"
                   ></i>
                 </a>
                 <a href="https://masai-glasscart.netlify.app/">
                   <i
                     style={{ fontSize: "50px", color: "black" }}
-                    class="fa-solid fa-arrow-right-to-bracket"
+                    className="fa-solid fa-arrow-right-to-bracket"
                   ></i>
                 </a>
               </div>
@@ -257,13 +284,13 @@ const Navbar = () => {
                 <a href="https://github.com/tirthorajbadhei/YouTube">
                   <i
                     style={{ fontSize: "50px", color: "black" }}
-                    class="fa-brands fa-github"
+                    className="fa-brands fa-github"
                   ></i>
                 </a>
                 <a href="https://sensational-bunny-5315c0.netlify.app/">
                   <i
                     style={{ fontSize: "50px", color: "black" }}
-                    class="fa-solid fa-arrow-right-to-bracket"
+                    className="fa-solid fa-arrow-right-to-bracket"
                   ></i>
                 </a>
               </div>
@@ -288,13 +315,13 @@ const Navbar = () => {
                 <a href="https://github.com/tirthorajbadhei/DeskTime_Clone">
                   <i
                     style={{ fontSize: "50px", color: "black" }}
-                    class="fa-brands fa-github"
+                    className="fa-brands fa-github"
                   ></i>
                 </a>
                 <a href="https://teslatime-dot-com.netlify.app/">
                   <i
                     style={{ fontSize: "50px", color: "black" }}
-                    class="fa-solid fa-arrow-right-to-bracket"
+                    className="fa-solid fa-arrow-right-to-bracket"
                   ></i>
                 </a>
               </div>
@@ -344,12 +371,30 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-      <div></div>
-
+      <br />
+      <GitHubCalendar
+        style={{
+          margin: "auto",
+          textAlign: "center",
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+        htmlFor
+        username="tirthorajbadhei"
+      />
+      <br />
       <br />
       <h1 style={{ fontSize: "60px", fontWeight: "700", textAlign: "center" }}>
-        CONTACT
+        <Typewriter
+          words={["CONTACT"]}
+          loop={0}
+          cursor
+          typeSpeed={100}
+          deleteSpeed={100}
+          delaySpeed={1000}
+        />
       </h1>
+      <br />
       <div className="container text-center" id="scrollspyHeading4">
         <div className="row div">
           <div className="col-sm div1">
@@ -369,7 +414,7 @@ const Navbar = () => {
                 <a href="https://github.com/tirthorajbadhei">
                   <i
                     style={{ fontSize: "50px", color: "black" }}
-                    class="fa-brands fa-github"
+                    className="fa-brands fa-github"
                   ></i>
                 </a>
               </div>
@@ -378,7 +423,7 @@ const Navbar = () => {
                   {" "}
                   <i
                     style={{ fontSize: "50px", color: "black" }}
-                    class="fa-brands fa-linkedin"
+                    className="fa-brands fa-linkedin"
                   ></i>
                 </a>
               </div>
@@ -387,30 +432,33 @@ const Navbar = () => {
                   {" "}
                   <i
                     style={{ fontSize: "50px", color: "black" }}
-                    class="icon1 fa-solid fa-envelope"
+                    className="icon1 fa-solid fa-envelope"
                   ></i>
                 </a>
               </div>
             </div>
           </div>
-          <div class="col-sm div1">
-            <div class="mb-3">
-              <label for="exampleFormControlInput1" class="form-label">
+          <div className="col-sm div1">
+            <div className="mb-3">
+              <label htmlFor="exampleFormControlInput1" className="form-label">
                 Email address
               </label>
               <input
                 type="email"
-                class="form-control"
+                className="form-control"
                 id="exampleFormControlInput1"
                 placeholder="name@example.com"
               />
             </div>
-            <div class="mb-3">
-              <label for="exampleFormControlTextarea1" class="form-label">
+            <div className="mb-3">
+              <label
+                htmlFor="exampleFormControlTextarea1"
+                className="form-label"
+              >
                 Subject
               </label>
               <textarea
-                class="form-control"
+                className="form-control"
                 id="exampleFormControlTextarea1"
                 rows="3"
               ></textarea>
