@@ -1,6 +1,12 @@
 import { Typewriter } from "react-simple-typewriter";
 import GitHubCalendar from "react-github-calendar";
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 const Navbar = () => {
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
   const onButtonClick = () => {
     // using Java Script method to get PDF file
     fetch("Tirthoraj_Badhei_Resume.pdf").then((response) => {
@@ -129,7 +135,7 @@ const Navbar = () => {
               </div>
             </div>
           </div>
-          <div className="col-sm">
+          <div className="col-sm" data-aos="fade-left">
             <img className="img1" src="tirthoraj.png" alt="tirthoraj" />
           </div>
         </div>
@@ -212,7 +218,8 @@ const Navbar = () => {
       <br />
       <br />
       <br />
-
+      <br />
+      <br />
       <br />
       <h1 style={{ fontSize: "60px", fontWeight: "700", textAlign: "center" }}>
         <Typewriter
@@ -234,7 +241,7 @@ const Navbar = () => {
       ></div>
       <div className="container-fluid text-center">
         <div className="row">
-          <div className="col-sm project">
+          <div className="col-sm project" data-aos="fade-up">
             <div>
               <img style={{ width: "100%" }} src="1.jpg" alt="" />
               <p>
@@ -266,7 +273,7 @@ const Navbar = () => {
               </div>
             </div>
           </div>
-          <div className="col-sm project">
+          <div className="col-sm project" data-aos="fade-up">
             <div>
               <img style={{ width: "100%" }} src="2.jpg" alt="" />
               <p>
@@ -296,13 +303,12 @@ const Navbar = () => {
               </div>
             </div>
           </div>
-          <div className="col-sm project">
+          <div className="col-sm project" data-aos="fade-up">
             <div>
               <img style={{ width: "100%" }} src="3.jpg" alt="" />
               <p>
-                DeskTime is a time management website, where users can add and
-                remove certain team members, and plan any project they want to
-                do
+                OneClick, It is a Full-Stack E-commerce Website, where user can
+                register and order any products.
               </p>
               <div
                 style={{
@@ -312,13 +318,13 @@ const Navbar = () => {
                   justifyContent: "center",
                 }}
               >
-                <a href="https://github.com/tirthorajbadhei/DeskTime_Clone">
+                <a href="https://github.com/tirthorajbadhei/E-Com_Full-Stack">
                   <i
                     style={{ fontSize: "50px", color: "black" }}
                     className="fa-brands fa-github"
                   ></i>
                 </a>
-                <a href="https://teslatime-dot-com.netlify.app/">
+                <a href="https://e-com-fullstack.netlify.app/">
                   <i
                     style={{ fontSize: "50px", color: "black" }}
                     className="fa-solid fa-arrow-right-to-bracket"
