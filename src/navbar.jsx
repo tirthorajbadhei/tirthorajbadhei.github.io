@@ -49,15 +49,20 @@ const Navbar = () => {
                 aria-current="page"
                 href="#scrollspyHeading1"
               >
-                ABOUT
+                HOME
               </a>
-              <a className="nav-link" href="#scrollspyHeading2">
-                SKILLS
+              <a className="nav-link" href="#scrollspyHeading0">
+                ABOUT
               </a>
               <a className="nav-link" href="#scrollspyHeading3">
                 PROJECTS
               </a>
+              <a className="nav-link" href="#scrollspyHeading2">
+                SKILLS
+              </a>
               <a
+                href="https://drive.google.com/file/d/1DrXBGYLuvRhDFTgDk4WDsnxiLbnLjsja/view?usp=share_link"
+                target="_blank"
                 style={{ cursor: "pointer" }}
                 className="nav-link"
                 onClick={onButtonClick}
@@ -74,6 +79,7 @@ const Navbar = () => {
       <br />
       <br />
       <br />
+
       <div className="container-fluid text-center" id="scrollspyHeading1">
         <div className="row">
           <div className="col-sm">
@@ -103,36 +109,14 @@ const Navbar = () => {
               />
             </h5>
             <br />
-
-            <h5 style={{ color: " #ff014f" }}>FIND ME</h5>
-            <br />
-            <div className="icon">
-              <div>
-                <a href="https://github.com/tirthorajbadhei">
-                  <i
-                    style={{ fontSize: "50px", color: "black" }}
-                    className="fa-brands fa-github"
-                  ></i>
-                </a>
-              </div>
-              <div>
-                <a href="https://www.linkedin.com/in/tirthorajbadhei/">
-                  {" "}
-                  <i
-                    style={{ fontSize: "50px", color: "black" }}
-                    className="fa-brands fa-linkedin"
-                  ></i>
-                </a>
-              </div>
-              <div>
-                <a href="https://drive.google.com/file/d/1DrXBGYLuvRhDFTgDk4WDsnxiLbnLjsja/view?usp=share_link">
-                  {" "}
-                  <i
-                    style={{ fontSize: "50px", color: "black" }}
-                    className="icon1 fa-solid fa-envelope"
-                  ></i>
-                </a>
-              </div>
+            <div onClick={onButtonClick}>
+              <i
+                style={{ fontSize: "200%", cursor: "pointer" }}
+                className="fa-solid fa-download"
+              >
+                {" "}
+                Resume
+              </i>
             </div>
           </div>
           <div className="col-sm" data-aos="fade-left">
@@ -140,9 +124,220 @@ const Navbar = () => {
           </div>
         </div>
       </div>
+
       <br />
       <br />
       <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <div className="container text-center" data-aos="slide-right">
+        <h1
+          style={{ fontSize: "60px", fontWeight: "700", textAlign: "center" }}
+          id="scrollspyHeading0"
+        >
+          <Typewriter
+            words={["About Me"]}
+            loop={0}
+            cursor
+            typeSpeed={100}
+            deleteSpeed={100}
+            delaySpeed={1000}
+          />
+        </h1>
+        <div className="row">
+          <div className="col">
+            <h3 style={{ width: "70%", margin: "auto", textAlign: "center" }}>
+              An aspiring full-stack web developer specializing in MERN stack.
+              Has 1000 hours of coding experience and is proficient in ReactJS,
+              Javascript and MongoDB. keen to learn new technologies, like
+              WEB-3.0, Blockchain, and Defi, and looking forward to working in a
+              company and contributing to it's growth.
+            </h3>
+          </div>
+        </div>
+      </div>
+
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <h1
+        style={{ fontSize: "60px", fontWeight: "700", textAlign: "center" }}
+        id="scrollspyHeading3"
+      >
+        <Typewriter
+          words={["My Projects"]}
+          loop={0}
+          cursor
+          typeSpeed={100}
+          deleteSpeed={100}
+          delaySpeed={1000}
+        />
+      </h1>
+      <div
+        data-bs-spy="scroll"
+        data-bs-target="#navbar-example2"
+        data-bs-root-margin="0px 0px -40%"
+        data-bs-smooth-scroll="true"
+        className="scrollspy-example bg-body-tertiary p-3 rounded-2"
+        tabIndex="0"
+      ></div>
+      <div className="container text-center">
+        <div className="row">
+          <div className="col-sm project" data-aos="fade-up">
+            <div>
+              <img style={{ width: "100%" }} src="1.jpg" alt="" />
+              <h3>Lenskart Clone</h3>
+              <p>
+                Lenskart Clone. is an Indian e-commerce company that sells
+                eyeglasses, contact lenses, and sunglasses.
+              </p>
+              <h4>Tech Stacks</h4>
+              <p> ReactJS, NodeJS, ExpressJS, MongoDB, chakraUI</p>
+              <div
+                style={{
+                  display: "flex",
+                  gap: "50px",
+
+                  justifyContent: "center",
+                }}
+              >
+                <a href="https://github.com/tirthorajbadhei/Lenskart_Clone">
+                  <i
+                    style={{ fontSize: "50px", color: "black" }}
+                    className="fa-brands fa-github"
+                  ></i>
+                </a>
+                <a href="https://masai-glasscart.netlify.app/">
+                  <i
+                    style={{ fontSize: "50px", color: "black" }}
+                    className="fa-solid fa-arrow-right-to-bracket"
+                  ></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div className="col-sm project" data-aos="fade-up">
+            <div>
+              <img style={{ width: "100%" }} src="3.jpg" alt="" />
+              <h3>OneClick</h3>
+              <p>
+                OneClick, It is a Full-Stack E-commerce Website, where user can
+                register and order any products.
+              </p>
+              <h4>Tech Stacks</h4>
+              <p> ReactJS, NodeJS, ExpressJS, MongoDB, BootStrap</p>
+              <div
+                style={{
+                  display: "flex",
+                  gap: "50px",
+
+                  justifyContent: "center",
+                }}
+              >
+                <a href="https://github.com/tirthorajbadhei/E-Com_Full-Stack">
+                  <i
+                    style={{ fontSize: "50px", color: "black" }}
+                    className="fa-brands fa-github"
+                  ></i>
+                </a>
+                <a href="https://e-com-fullstack.netlify.app/">
+                  <i
+                    style={{ fontSize: "50px", color: "black" }}
+                    className="fa-solid fa-arrow-right-to-bracket"
+                  ></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br />
+      <div className="container text-center">
+        <div className="row">
+          <div className="col-sm project" data-aos="fade-up">
+            <div>
+              <img style={{ width: "100%" }} src="4.jpg" alt="" />
+              <h3>Nordstrom Clone</h3>
+              <p>
+                Nordstrom is a leading fashion retailer offering compelling
+                clothing, shoes, and accessories for men women, and kids.
+              </p>
+              <h4>Tech Stacks</h4>
+              <p> ReactJS, chakraUI</p>
+              <div
+                style={{
+                  display: "flex",
+                  gap: "50px",
+
+                  justifyContent: "center",
+                }}
+              >
+                <a href="https://github.com/tirthorajbadhei/Nordstrom_Clone">
+                  <i
+                    style={{ fontSize: "50px", color: "black" }}
+                    className="fa-brands fa-github"
+                  ></i>
+                </a>
+                <a href="https://nordstrom-tirthoraj.netlify.app/">
+                  <i
+                    style={{ fontSize: "50px", color: "black" }}
+                    className="fa-solid fa-arrow-right-to-bracket"
+                  ></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div className="col-sm project" data-aos="fade-up">
+            <div>
+              <img style={{ width: "100%" }} src="2.jpg" alt="" />
+              <h3>YouTube Clone</h3>
+              <p>
+                YouTube 2.0 Clone, where users can search and play any video
+                they want
+              </p>
+              <h4>Tech Stacks</h4>
+              <p>HTML, Javascript, Css</p>
+              <div
+                style={{
+                  display: "flex",
+                  gap: "50px",
+
+                  justifyContent: "center",
+                }}
+              >
+                <a href="https://github.com/tirthorajbadhei/YouTube">
+                  <i
+                    style={{ fontSize: "50px", color: "black" }}
+                    className="fa-brands fa-github"
+                  ></i>
+                </a>
+                <a href="https://sensational-bunny-5315c0.netlify.app/">
+                  <i
+                    style={{ fontSize: "50px", color: "black" }}
+                    className="fa-solid fa-arrow-right-to-bracket"
+                  ></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+
       <h1
         id="scrollspyHeading2"
         style={{ textAlign: "center", color: " #ff014f" }}
@@ -161,7 +356,7 @@ const Navbar = () => {
       <br />
       <div className="container-fluid text-centerr">
         <div className="row">
-          <div className="col-sm">
+          <div className="col-sm" data-aos="slide-right">
             <div className="mainSkill">
               <div className="skill">
                 <img
@@ -215,127 +410,6 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <h1 style={{ fontSize: "60px", fontWeight: "700", textAlign: "center" }}>
-        <Typewriter
-          words={["My Projects"]}
-          loop={0}
-          cursor
-          typeSpeed={100}
-          deleteSpeed={100}
-          delaySpeed={1000}
-        />
-      </h1>
-      <div
-        data-bs-spy="scroll"
-        data-bs-target="#navbar-example2"
-        data-bs-root-margin="0px 0px -40%"
-        data-bs-smooth-scroll="true"
-        className="scrollspy-example bg-body-tertiary p-3 rounded-2"
-        tabIndex="0"
-      ></div>
-      <div className="container-fluid text-center">
-        <div className="row">
-          <div className="col-sm project" data-aos="fade-up">
-            <div>
-              <img style={{ width: "100%" }} src="1.jpg" alt="" />
-              <p>
-                Lenskart Clone. is an Indian e-commerce company that sells
-                eyeglasses, contact lenses, and sunglasses. Lenskart has a wide
-                variety of products and offers services such as free home trial
-                and virtual try-on.
-              </p>
-              <div
-                style={{
-                  display: "flex",
-                  gap: "50px",
-
-                  justifyContent: "center",
-                }}
-              >
-                <a href="https://github.com/tirthorajbadhei/Lenskart_Clone">
-                  <i
-                    style={{ fontSize: "50px", color: "black" }}
-                    className="fa-brands fa-github"
-                  ></i>
-                </a>
-                <a href="https://masai-glasscart.netlify.app/">
-                  <i
-                    style={{ fontSize: "50px", color: "black" }}
-                    className="fa-solid fa-arrow-right-to-bracket"
-                  ></i>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div className="col-sm project" data-aos="fade-up">
-            <div>
-              <img style={{ width: "100%" }} src="2.jpg" alt="" />
-              <p>
-                YouTube 2.0 Clone, where users can search and play any video
-                they want
-              </p>
-              <div
-                style={{
-                  display: "flex",
-                  gap: "50px",
-
-                  justifyContent: "center",
-                }}
-              >
-                <a href="https://github.com/tirthorajbadhei/YouTube">
-                  <i
-                    style={{ fontSize: "50px", color: "black" }}
-                    className="fa-brands fa-github"
-                  ></i>
-                </a>
-                <a href="https://sensational-bunny-5315c0.netlify.app/">
-                  <i
-                    style={{ fontSize: "50px", color: "black" }}
-                    className="fa-solid fa-arrow-right-to-bracket"
-                  ></i>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div className="col-sm project" data-aos="fade-up">
-            <div>
-              <img style={{ width: "100%" }} src="3.jpg" alt="" />
-              <p>
-                OneClick, It is a Full-Stack E-commerce Website, where user can
-                register and order any products.
-              </p>
-              <div
-                style={{
-                  display: "flex",
-                  gap: "50px",
-
-                  justifyContent: "center",
-                }}
-              >
-                <a href="https://github.com/tirthorajbadhei/E-Com_Full-Stack">
-                  <i
-                    style={{ fontSize: "50px", color: "black" }}
-                    className="fa-brands fa-github"
-                  ></i>
-                </a>
-                <a href="https://e-com-fullstack.netlify.app/">
-                  <i
-                    style={{ fontSize: "50px", color: "black" }}
-                    className="fa-solid fa-arrow-right-to-bracket"
-                  ></i>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <br />
       <br />
       <br />
       <br />
