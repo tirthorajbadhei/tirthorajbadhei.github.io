@@ -61,7 +61,7 @@ const Navbar = () => {
                 SKILLS
               </a>
               <a
-                href="https://drive.google.com/file/d/1DrXBGYLuvRhDFTgDk4WDsnxiLbnLjsja/view?usp=share_link"
+                href="https://drive.google.com/file/d/1Ah3ofjb-52aMtmKvWq-LxXtV7vlnkPBB/view?usp=share_link"
                 target="_blank"
                 style={{ cursor: "pointer" }}
                 className="nav-link"
