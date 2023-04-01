@@ -508,7 +508,7 @@ const Navbar = () => {
                 </a>
               </div>
               <div>
-                <a href="https://drive.google.com/file/d/1Ah3ofjb-52aMtmKvWq-LxXtV7vlnkPBB/view?usp=share_link">
+                <a href="https://drive.google.com/file/d/1Ah3ofjb-52aMtmKvWq-LxXtV7vlnkPBB/view">
                   {" "}
                   <i
                     style={{ fontSize: "50px", color: "black" }}
